@@ -1,1 +1,5 @@
-<h1><%=@bookmarks.join(', ')%></h1>
+<ul>
+  <% @bookmarks.each do |bookmark| %>
+    <li><%= bookmark %></li>
+  <% end %>
+</ul>
