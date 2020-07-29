@@ -12,13 +12,14 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 #
-ENV['RACK_ENV'] = 'test'
+ENV['ENVIRONMENT'] = 'test'
 
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
+require 'setup_test_database'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 Capybara.app = BookmarkManager
@@ -32,6 +33,10 @@ SimpleCov.start
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+
+  config.before(:each) do
+    setup_test_database
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
@@ -46,7 +51,7 @@ RSpec.configure do |config|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
 
-  # rspec-mocks config goes here. You can use an alternate test double
+  # rspec-mocks config goes here. You can use an alternate est double
   # library (such as bogus or mocha) by changing the `mock_with` option here.
   config.mock_with :rspec do |mocks|
     # Prevents you from mocking or stubbing a method that does not exist on
