@@ -4,6 +4,8 @@ describe Bookmark do
 
   describe '.all' do
     it 'responds to all method' do
+      Bookmark.create('https://soundcloud.com/')
+      Bookmark.create('http://www.google.com')
       bookmarks = Bookmark.all
       expect(bookmarks).to include "https://soundcloud.com/"
       expect(bookmarks).to include "http://www.google.com"
