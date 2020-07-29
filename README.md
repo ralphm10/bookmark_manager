@@ -5,6 +5,13 @@ As a visitor to the website
 So I can quickly go one my favourite websites
 I want to be shown a list of bookmarks
 ```
+
+```
+As a visitor to the website
+So I can update the list of my favourite websites
+I want to be able to add a new bookmark
+```
+
 <img src="./bookmarks1.svg" />
 
 ```
