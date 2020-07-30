@@ -3,6 +3,8 @@ require './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
 
+  enable :method_override
+
   get '/' do
     'Hello, world'
   end
@@ -21,6 +23,11 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
 
-# start the server if ruby file executed directly
+  delete '/bookmarks/:id' do
+    Bookmark.delete(id: params[:id])
+    redirect '/bookmarks'
+  end
+
+  # start the server if ruby file executed directly
   run! if app_file == $0
 end

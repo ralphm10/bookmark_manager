@@ -30,4 +30,13 @@ describe Bookmark do
     end
   end
 
+  describe '.delete' do
+    it 'deletes a bookmark' do
+      bookmark = Bookmark.create(url: 'https://soundcloud.com', title: 'Soundcloud')
+      Bookmark.delete(id: bookmark.id)
+      bookmarks = Bookmark.all
+      expect(bookmarks.length).to eq 0
+    end
+  end
+
 end

@@ -35,6 +35,15 @@
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -51,6 +60,22 @@
       },
       "/Users/student/Documents/Projects/Week4/bookmark_manager/spec/features/add_bookmark_spec.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/student/Documents/Projects/Week4/bookmark_manager/spec/features/delete_bookmark_spec.rb": {
+        "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -87,6 +112,6 @@
         ]
       }
     },
-    "timestamp": 1596119804
+    "timestamp": 1596124555
   }
 }
