@@ -1,10 +1,9 @@
 feature 'viewing bookmarks' do
   scenario 'user navigates to bookmarks page and sees a list' do
-    Bookmark.create('https://soundcloud.com/')
-    Bookmark.create('http://www.google.com')
-    bookmarks = Bookmark.all
+    Bookmark.create(url: 'https://soundcloud.com/', title: 'Soundcloud')
+    Bookmark.create(url: 'http://www.google.com', title: 'Google')
     visit '/bookmarks'
-    expect(page).to have_content "https://soundcloud.com/"
-    expect(page).to have_content "http://www.google.com"
+    expect(page).to have_content "Soundcloud"
+    expect(page).to have_content "Google"
   end
 end
