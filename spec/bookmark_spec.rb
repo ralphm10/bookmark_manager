@@ -23,10 +23,10 @@ describe Bookmark do
       bookmark = Bookmark.create(url: 'www.facebook.com', title: 'Facebook')
       persisted_data = persisted_data(id: bookmark.id)
 
-        expect(bookmark).to be_a Bookmark
-        expect(bookmark.id).to eq persisted_data['id']
-        expect(bookmark.title).to eq 'Facebook'
-        expect(bookmark.url).to eq 'www.facebook.com'
+      expect(bookmark).to be_a Bookmark
+      expect(bookmark.id).to eq persisted_data['id']
+      expect(bookmark.title).to eq 'Facebook'
+      expect(bookmark.url).to eq 'www.facebook.com'
     end
   end
 
