@@ -44,6 +44,17 @@
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -88,8 +99,41 @@
           null
         ]
       },
+      "/Users/student/Documents/Projects/Week4/bookmark_manager/spec/features/find_bookmark_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/student/Documents/Projects/Week4/bookmark_manager/spec/features/testing_infrastructure_spec.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/student/Documents/Projects/Week4/bookmark_manager/spec/features/update_bookmark_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -112,6 +156,6 @@
         ]
       }
     },
-    "timestamp": 1596124555
+    "timestamp": 1596208098
   }
 }

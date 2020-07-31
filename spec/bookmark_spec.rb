@@ -39,4 +39,13 @@ describe Bookmark do
     end
   end
 
+  describe '.find' do
+    it 'finds and displays a bookmark' do
+      bookmark = Bookmark.create(url: 'https://soundcloud.com', title: 'Soundcloud')
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+      result = connection.query("SELECT * FROM bookmarks WHERE title = '#{bookmark.title}'")
+      result
+    end
+  end
+
 end
